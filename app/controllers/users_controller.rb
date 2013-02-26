@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   	if @user.save
   		#handle successful save
-  		flash[:success] = "Your account has been created!"
+  		flash[:success] = "Welcome! Your account has been created!"
   		redirect_to @user
   	else
   		render 'new'
