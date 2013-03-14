@@ -14,7 +14,7 @@ describe "Static pages" do
 
     before { visit root_path }
     
-    let(:heading) { 'Welcome to the sample app' }
+    let(:heading) { 'MICROBLOG - by Jason' }
     let(:page_title) { '' }
 
     it_should_behave_like "all static pages"
@@ -73,7 +73,7 @@ describe "Static pages" do
     click_link "Home"
     click_link "Sign up now!"
     page.should have_selector 'title', text: full_title('Sign up')
-    click_link "sample app"
+    click_link "microblog"
     page.should have_selector 'title', text: full_title('')
   end
 end
